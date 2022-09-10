@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
-*main-entry point for the program.
+*main - entry point for the program.
 *
-*Retrun:0 if no errors, return non zero if errors.
+*Retrun: 0 if no errors, return non zero if errors.
 */
 int main(void)
 {
@@ -16,5 +16,5 @@ printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
 printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
 printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
 printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
-return (0);
+Return(0);
 }
