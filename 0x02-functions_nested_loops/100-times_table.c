@@ -1,10 +1,10 @@
 #include "main.h"
+
 /**
-*print_times_table - times table, starting with 0.
-*@n : times table to use
-*
-*Return:void
-*/
+ *print_times_table -print times table
+ *@n: times table to use
+ *Return:void
+ */
 void print_times_table(int n)
 {
 int a = 0, rep, b;
