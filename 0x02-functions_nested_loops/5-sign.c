@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *print_sign - check numbers
- *@n : number to check
- *Return:0, 1, or -1
+ *@n: number to check
+ *Return: 1 if positive, 0 if zero, -1 if less than zero
  */
 int print_sign(int n)
 {
@@ -23,4 +23,5 @@ test = -1;
 _putchar('-');
 }
 return (test);
+}
 }
