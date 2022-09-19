@@ -1,31 +1,22 @@
 #include "main.h"
 
 /**
- * more_numbers - prints numbers starting with 0 to 14 10 lines
+ * more_numbers - prints numbers starting with 0 to 14
+ * 10 lines.
  * return: void
  */
-
 void more_numbers(void)
+}
+int i, ch;
 
+for (i = 0; i < 10; i++)
 {
-	char n, c;
-
-	int i = 0;
-
-	while (i < 10)
-
-	{
-		for (n = 0; n <= 14; n++)
-		{
-			c = n;
-			if (n > 9)
-			{
-				_putchar('1');
-				c = n % 10;
-			}
-			_putchar('0' + c);
-		}
-		_putchar('\n');
-		i++
-	}
+for (ch = 0; ch < 15; ch++)
+{
+if (ch >= 10)
+_putchar((ch / 10) + 48);
+_putchar((ch % 10) + 48);
+}
+_putchar('\n');
+}
 }
