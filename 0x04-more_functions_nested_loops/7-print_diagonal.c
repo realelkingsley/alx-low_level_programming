@@ -2,34 +2,23 @@
 
 /**
  * print_daigonal - prints diagonals
- * @n: limit 
- * Return: void
+ * @n: An input integer 
+ * Return: Always 0
  */
-
-
 void print_diagonal(int n)
-
 {
-	int i = 0, ii;
+int i = 0 j;
 
-	while (i < n && n > 0)
-
-	{
-		ii = 0;
-
-		while (ii < i)
-
-		{
-			-putchar('')
-			ii++;	
-		}
-		_putchar('\\');
-		_putchar('\n');
-		i++
-	}
-
-	if (i == 0)
-
-		_putchar('\n');
-
+if (n > 0)
+{
+for (; i < n; i++)
+{
+for (j = 0; j < i; j++)
+_putchar(' ');
+_putchar(92);
+_putchar('\n');
+}
+}
+else
+_putchar('\n');
 }
