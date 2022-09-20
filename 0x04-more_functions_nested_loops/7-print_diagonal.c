@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_daigonal - prints diagonals
+ * print_daigonal - a function that draws a diagonal line on the terminal.
  * @n: An input integer 
  * Return: Always 0
  */
 void print_diagonal(int n)
 {
-int i = 0 j;
+int i = 0, j;
 
 if (n > 0)
 {
