@@ -1,36 +1,30 @@
-#include"main.h"
+#include "main.h"
 
 /**
- * print_square - check for a digit
- * @size: limit
- * Return: void 
+ * print_square - draws a square
+ * @size: length and width of square
+ *
+ * Return: void
  */
 
 void print_square(int size)
-
 {
-	int i, j;
+int row;
+int column;
 
-	if (size > 0)
-
-	{
-		for (i = 0; j < size; i++)
-
-		{
-
-			for (j = 0; j < size; j++)
-
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
-	}
-
-	else
-
-	{
-		_putchar('\n');
-	}
-
+if (size > 0)
+{
+for (row = 0; row < size; row++)
+{
+for (column = 0; column < size; column++)
+{
+_putchar('#');
+}
+_putchar('\n');
+}
+}
+else
+{
+_putchar('\n');
+}
 }
