@@ -1,45 +1,26 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - print fizz buzz
- * Return: void
+ * main - Entry piont
+ * Return: Always 0
  */
-
 int main(void)
-
 {
-	int il;
+int i = 1;
 
-	for  (i = 1; i <= 100; i++)
+for (; i < 100 ; i++)
+{
+if (i % 3 == 0 && i % 5 == 0)
+printf("FizzBuzz ");
+else if (i % 3 == 0)
+printf("Fizz ");
+else if (i % 5 == 0)
+printf("Buzz ");
+else
+printf("%d ", i);
+}
+printf("Buzz\n");
 
-	{
-		if (i % 3 == 0 && i % 5 != 0)
-		{
-			printf("Fizz");
-		}
-		else if (i % 3 != 0 && i % 5 == 0)
-
-		{
-			prinft("Buzz");
-		}
-
-		else if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-
-		else
-
-		{
-			printf("%d", i);
-		}
-
-		if (i != 100)
-			putchar(' ');
-		else
-			putchar('\n');
-	}
-
-	return (0);
-
+return (0);
 }
