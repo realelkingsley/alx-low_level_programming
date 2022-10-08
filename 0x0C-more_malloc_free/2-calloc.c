@@ -1,43 +1,29 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * str_concat - concatenates two strings.
- * @s1: first string.
- * @s2: second string.
+ * _calloc - allocates memory for an array.
+ * @nmemb: number of elements.
+ * @size: size of bytes.
  *
- * Return: pointer of an array of chars
+ * Return: pointer to the allocated memory.
+ * if nmemb or size is 0, returns NULL.
+ * if malloc fails, returns NULL.
  */
-char *str_concat(char *s1, char *s2)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *strout;
-	unsigned int i, j, k, limit;
+char *p;
+unsigned int i;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+if (nmemb == 0 || size == 0)
+return (NULL);
 
-	for (i = 0; s1[i] != '\0'; i++)
-		;
+p = malloc(nmemb * size);
 
-	for (j = 0; s2[j] != '\0'; j++)
-		;
+if (p == NULL)
+return (NULL);
 
-	strout = malloc(sizeof(char) * (i + j + 1));
+for (i = 0; i < (nmemb * size); i++)
+p[i] = 0;
 
-	if (strout == NULL)
-	{
-		free(strout);
-		return (NULL);
-	}
-
-	for (k = 0; k < i; k++)
-		strout[k] = s1[k];
-
-	limit = j;
-	for (j = 0; j <= limit; k++, j++)
-		strout[k] = s2[j];
-
-	return (strout);
+return (p);
 }
